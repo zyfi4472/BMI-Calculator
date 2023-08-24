@@ -1,7 +1,5 @@
+import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
-
-const double iconSize = 70;
-const double labelSize = 30;
 
 // ignore: must_be_immutable
 class ReuseableIconAndLabel extends StatelessWidget {
@@ -22,9 +20,7 @@ class ReuseableIconAndLabel extends StatelessWidget {
         const SizedBox(height: 15),
         Text(
           label,
-          style: const TextStyle(
-            fontSize: labelSize,
-          ),
+          style: kLabelTextStyle,
         )
       ],
     );
