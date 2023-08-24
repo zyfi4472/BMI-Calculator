@@ -1,11 +1,12 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:bmi_calculator/calculator_brain.dart';
+import 'package:bmi_calculator/components/icon_label.dart';
+import 'package:bmi_calculator/components/reuseable_card.dart';
+import 'package:bmi_calculator/components/rounded_icon_button.dart';
 import 'package:bmi_calculator/constants.dart';
-import 'package:bmi_calculator/icon_label.dart';
-import 'package:bmi_calculator/results.dart';
-import 'package:bmi_calculator/reuseable_card.dart';
-import 'package:bmi_calculator/rounded_icon_button.dart';
+import 'package:bmi_calculator/screens/results_page.dart';
+
 import 'package:flutter/material.dart';
 
 enum Gender {
@@ -191,7 +192,7 @@ class _InputPageState extends State<InputPage> {
                                 );
                               },
                             ),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             RoundedIconButton(
                               icon: Icons.add,
                               onChangeHandler: () {
